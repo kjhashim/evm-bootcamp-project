@@ -23,8 +23,11 @@ npx hardhat compile
 ## Deploy the 3 smart contracts
 
 ```bash
-# deploy LuckyToken contract, minting 1000000000 tokens and setting the faucet to dispense 100 tokens at a time
-npx hardhat run ./scripts/DeployLuckyToken.ts --network sepolia
+npx hardhat run deploy/deploy_game.ts --network sepolia
+or
+npx hardhat deploy --network hardhat
+or
+yarn deploy
 
 ```
 
