@@ -101,7 +101,7 @@ contract Wheel is Ownable {
                 return spinChoices[i];
             }
         }
-        return "";
+        return spinChoices[spinChoices.length-1];
     }
 
 
