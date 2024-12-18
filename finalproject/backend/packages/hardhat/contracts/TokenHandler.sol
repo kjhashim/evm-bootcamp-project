@@ -98,7 +98,6 @@ contract TokenHandler {
 
     // Function to check an individual address's token balance in the contract
     function getStashBalance(address _userAddress) external view returns (uint256) {
-        require((msg.sender == _userAddress) || (msg.sender == ownerAddress), "Only the owner or the House can check stash balance");
         return stashBalances[_userAddress];
     }
 
