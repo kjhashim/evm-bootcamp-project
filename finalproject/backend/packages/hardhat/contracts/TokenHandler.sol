@@ -10,7 +10,7 @@ contract TokenHandler {
     LuckyToken public token; // ERC-20 token address
     address public ownerAddress;
     address public masterAccountAddress;
-    // stashBalances + kittyBalance should equal 
+    // stashBalances + kittyBalance should equal total balance of game, see getGameBalance()
     // Track stash balances for each user address
     mapping(address => uint256) public stashBalances;
     // Track this game's kitty balance
