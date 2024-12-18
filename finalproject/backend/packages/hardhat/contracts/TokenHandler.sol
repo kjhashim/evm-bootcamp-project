@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-import "./LuckyToken.sol"; // Import the ERC-20 LuckyToken interface
+import "./LuckyToken.sol"; // Import the ERC-20 LuckyToken
 
 /// @title TokenHandler contract to track user (stashes) and game (kitty) accounts
 /// @author Groups 1, 6
