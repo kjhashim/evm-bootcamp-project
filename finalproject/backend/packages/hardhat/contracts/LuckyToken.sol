@@ -66,7 +66,7 @@ contract LuckyToken is ERC20, ERC20Permit, AccessControl {
         return address(this);
     }
 
-    // get the address of the admin user this contract
+    // get the address of the admin user of this contract
     function getAdminAddress() external view returns (address) {
         return _adminAddress;
     }
