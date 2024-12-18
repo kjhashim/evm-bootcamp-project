@@ -12,7 +12,7 @@ contract TokenHandler {
     address public masterAccountAddress;
     // stashBalances + kittyBalance should equal 
     // Track stash balances for each user address
-    mapping(address => uint256) public stashBalances;
+    mapping(address => uint256) private stashBalances;
     // Track this game's kitty balance
     uint256 private kittyBalance;
 
@@ -68,18 +68,20 @@ contract TokenHandler {
     // Move tokens from game kitty to user's stash
     function withdrawGameKittyToStash(uint256 _numTokens) external {
         require(kittyBalance >= _numTokens, "Insufficient balance in game kitty to send to user stash");
-        kittyBalance -= _numTokens;
         stashBalances[msg.sender] += _numTokens;
+        kittyBalance -= _numTokens;
     }
 
     // transfer tokens from game kitty to Master Account
     function transferToMasterAccount(uint256 _numTokens) external onlyOwner {
         require(token.transferIn(address(this), _numTokens), "Transfer from kitty to master account failed");
+        kittyBalance -= _numTokens;
     }
 
     // transfer tokens from Master Account to game kitty
     function transferFromMasterAccount(uint256 _numTokens) external onlyOwner {
         require(token.transferOut(address(this), _numTokens), "Transfer from master account to kitty failed");
+        kittyBalance += _numTokens;
     }
 
     // Function for current user to send tokens to another address
