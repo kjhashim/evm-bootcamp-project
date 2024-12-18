@@ -82,7 +82,7 @@ contract Wheel is Ownable {
         uint256 defaultProb = 100/spinChoices.length;
         // adjust probabilities by house skew
         uint256 chosenProb = defaultProb - houseSkewPercentage;
-        uint256 otherProb = defaultProb - (houseSkewPercentage/(spinChoices.length-1));
+        uint256 otherProb = defaultProb + (houseSkewPercentage/(spinChoices.length-1));
         // Get a random number between 1 and 100
         uint256 randomValue = uint256(keccak256(abi.encodePacked(block.timestamp, block.prevrandao))) % 100;
         
