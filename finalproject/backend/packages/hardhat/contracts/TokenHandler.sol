@@ -35,7 +35,7 @@ contract TokenHandler {
         require(token.transferFrom(msg.sender, address(this), _numTokens), 
             string.concat(
                 "Failed to deposit ", Strings.toString(_numTokens),
-                "tokens from wallet to stash"
+                " tokens from wallet to stash"
             )
         );
         stashBalances[msg.sender] += _numTokens;
@@ -46,14 +46,14 @@ contract TokenHandler {
         require(stashBalances[msg.sender] >= _numTokens,
             string.concat(
                 "Insufficient token balance ", Strings.toString(stashBalances[msg.sender]),
-                "in user stash to withdraw", Strings.toString(_numTokens)
+                " in user stash to withdraw ", Strings.toString(_numTokens)
             )
         );
         stashBalances[msg.sender] -= _numTokens;
         require(token.transfer(msg.sender, _numTokens),
             string.concat(
                 "Withdrawal to wallet of ", Strings.toString(_numTokens),
-                "tokens failed"
+                " tokens failed"
             )
         );
     }
