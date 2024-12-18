@@ -10,7 +10,7 @@ contract TokenHandler {
     LuckyToken public token; // ERC-20 token address
     address public ownerAddress;
     address public masterAccountAddress;
-    // stashBalances + kittyBalance should equal total balance of game, see getGameBalance()
+    // stashBalances + kittyBalance should equal 
     // Track stash balances for each user address
     mapping(address => uint256) public stashBalances;
     // Track this game's kitty balance
@@ -42,7 +42,7 @@ contract TokenHandler {
     }
 
     // withdraw tokens from user's stash to user's wallet
-    function withdrawStashToWallet(uint256 _numTokens) external onlyOwner {
+    function withdrawStashToWallet(uint256 _numTokens) external {
         require(stashBalances[msg.sender] >= _numTokens,
             string.concat(
                 "Insufficient token balance ", Strings.toString(stashBalances[msg.sender]),
@@ -73,12 +73,12 @@ contract TokenHandler {
     }
 
     // transfer tokens from game kitty to Master Account
-    function transferToMasterAccount(uint256 _numTokens) external {
+    function transferToMasterAccount(uint256 _numTokens) external onlyOwner {
         require(token.transferIn(address(this), _numTokens), "Transfer from kitty to master account failed");
     }
 
     // transfer tokens from Master Account to game kitty
-    function transferFromMasterAccount(uint256 _numTokens) external {
+    function transferFromMasterAccount(uint256 _numTokens) external onlyOwner {
         require(token.transferOut(address(this), _numTokens), "Transfer from master account to kitty failed");
     }
 
