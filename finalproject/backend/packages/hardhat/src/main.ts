@@ -7,8 +7,8 @@ async function bootstrap() {
   app.enableCors();
 
   const config = new DocumentBuilder()
-    .setTitle("Betting Game")
-    .setDescription("Betting Game back end interface")
+    .setTitle("Onchain MegaBets")
+    .setDescription("Onchain MegaBets game back end interface")
     .setVersion("1.0")
     .addTag("final project")
     .build();
