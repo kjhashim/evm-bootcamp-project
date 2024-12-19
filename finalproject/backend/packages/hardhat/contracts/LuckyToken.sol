@@ -94,4 +94,10 @@ contract LuckyToken is ERC20, ERC20Permit, AccessControl {
         return _lastFaucetRequest[user];
     }
 
+    // change the owner and admin of this contract
+    function changeOwner(address _newOwner) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        _adminAddress = _newOwner;
+        _grantRole(DEFAULT_ADMIN_ROLE, _newOwner);
+    }
+
 }
