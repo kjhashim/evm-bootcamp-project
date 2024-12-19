@@ -39,9 +39,9 @@ contract Wheel is Ownable {
         require(gameOpen, "Game is closed");
         require((_numTokensBet >= minBet) && (_numTokensBet <= maxBet),
             string.concat(
-                "Invalid number of tokens bet. You must bet at least",
+                "Invalid number of tokens bet. You must bet at least ",
                 Strings.toString(minBet),
-                "tokens and no more than ",
+                " tokens and no more than ",
                 Strings.toString(maxBet)
             )
         );
@@ -61,7 +61,7 @@ contract Wheel is Ownable {
         require(kittyBalance >= _numTokensBet,
             string.concat(
                 "Game kitty balance of ", Strings.toString(kittyBalance),
-                "is insufficient to cover bet of ",
+                " is insufficient to cover bet of ",
                 Strings.toString(_numTokensBet)
             )
         );
