@@ -1,6 +1,8 @@
 ## Description
 
-Back end code for Onchain MegaBets
+This is the back end code for Onchain MegaBets.
+
+For the front end code, go to https://github.com/Munaiz123/evmBootCamp_FinalProject_Frontend/
 
 ## Project setup and compilation
 
