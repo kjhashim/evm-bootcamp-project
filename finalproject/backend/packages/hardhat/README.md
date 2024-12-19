@@ -40,11 +40,10 @@ Nothing to compile
 No need to generate any newer typings.
 deploying "LuckyToken" (tx: 0x7c5d1dcd5ad45dca197421c28f6ee044a18fcda3c3fb42656ff4bd0e75bbd6aa)...: deployed at 0xF0b66cD3DE25C92B2759dBcb6F578380866406E4 with 1738265 gas
 LuckyToken deployed to address: 0xF0b66cD3DE25C92B2759dBcb6F578380866406E4
-deploying "TokenHandler" (tx: 0x0ccab94a853b8736dfb36bf7599e0b1cd062d4d02851c3264189ae907f92d1bd)...: deployed at 0x7E0c9D26BE0Dd087aBc61A16a463BF8ac00C0289 with 916611 gas
-TokenHandler deployed to address: 0x7E0c9D26BE0Dd087aBc61A16a463BF8ac00C0289
-deploying "Wheel" (tx: 0xea28367d8f9094fcf37a0fcda74a8d587c7b181b57db3891805cbbcff26cbcf0)...: deployed at 0x1267AC7e84F3999b233a3BCb3c5258c5f14436b7 with 1294490 gas
-Wheel deployed to address: 0x1267AC7e84F3999b233a3BCb3c5258c5f14436b7
-```
+reusing "TokenHandler" at 0xd2D2Dd292Cd393FE17ef0459d9b5Be59D57989D8
+TokenHandler deployed to address: 0xd2D2Dd292Cd393FE17ef0459d9b5Be59D57989D8
+deploying "Wheel" (tx: 0x66bf6bec7bd13b18f6aa1c67fce6b69c82ed68352f0c405b25ba9a2805229783)...: deployed at 0x8b115f111824850Cb29502e342F67C6697710B7C with 1294490 gas
+Wheel deployed to address: 0x8b115f111824850Cb29502e342F67C6697710B7C```
 
 ## Run tests
 
