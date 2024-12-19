@@ -111,4 +111,8 @@ contract TokenHandler {
         ownerAddress = _newOwner;
     }
 
+    // get the address of the admin user this contract
+    function getOwnerAddress() external view returns (address) {
+        return ownerAddress;
+    }
 }
