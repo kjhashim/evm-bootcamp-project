@@ -26,7 +26,7 @@ npx hardhat compile
 
 Commands to deploy to sepolia or locally:
 ```bash
-npx hardhat run deploy/deploy_game.ts --network sepolia
+npx hardhat run deploy/01_deploy_game.ts --network sepolia
 or
 npx hardhat deploy --network hardhat
 or
