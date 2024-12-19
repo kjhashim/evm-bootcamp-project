@@ -1,6 +1,6 @@
 ## Description
 
-Back end code for Betting Game
+Back end code for Onchain MegaBets
 
 ## Project setup and compilation
 
