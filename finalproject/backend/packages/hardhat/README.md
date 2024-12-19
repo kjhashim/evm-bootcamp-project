@@ -38,12 +38,12 @@ deploy to Sepolia:
 $ npx hardhat deploy --network sepolia
 Nothing to compile
 No need to generate any newer typings.
-deploying "LuckyToken" (tx: 0x939953085299dfc5f01a1bc75145c0471b2f3b4a67b67b3ee782c23d28cc7b79)...: deployed at 0xa1125c2b9F8f01ffcc842a7A1DF51e93896005Eb with 1721217 gas
-LuckyToken deployed to address: 0xa1125c2b9F8f01ffcc842a7A1DF51e93896005Eb
-deploying "TokenHandler" (tx: 0x468e9188d9510196586dcbd8af144f00b523cf33698a65151b6362f8fff0fb17)...: deployed at 0x352eC232dEc669c21a06b5970749B3C7C9aCe77c with 915061 gas
-TokenHandler deployed to address: 0x352eC232dEc669c21a06b5970749B3C7C9aCe77c
-deploying "Wheel" (tx: 0x5f575e6b1f28de3c40b538ba95ff9e35c46d7fbf375e1879a7c7ace1bdae6faf)...: deployed at 0x33aee53756ceeFE20C3D3A37DCb9434884f5a3DD with 1256458 gas
-Wheel deployed to address: 0x33aee53756ceeFE20C3D3A37DCb9434884f5a3DD
+deploying "LuckyToken" (tx: 0x7c5d1dcd5ad45dca197421c28f6ee044a18fcda3c3fb42656ff4bd0e75bbd6aa)...: deployed at 0xF0b66cD3DE25C92B2759dBcb6F578380866406E4 with 1738265 gas
+LuckyToken deployed to address: 0xF0b66cD3DE25C92B2759dBcb6F578380866406E4
+deploying "TokenHandler" (tx: 0x0ccab94a853b8736dfb36bf7599e0b1cd062d4d02851c3264189ae907f92d1bd)...: deployed at 0x7E0c9D26BE0Dd087aBc61A16a463BF8ac00C0289 with 916611 gas
+TokenHandler deployed to address: 0x7E0c9D26BE0Dd087aBc61A16a463BF8ac00C0289
+deploying "Wheel" (tx: 0xea28367d8f9094fcf37a0fcda74a8d587c7b181b57db3891805cbbcff26cbcf0)...: deployed at 0x1267AC7e84F3999b233a3BCb3c5258c5f14436b7 with 1294490 gas
+Wheel deployed to address: 0x1267AC7e84F3999b233a3BCb3c5258c5f14436b7
 ```
 
 ## Run tests
