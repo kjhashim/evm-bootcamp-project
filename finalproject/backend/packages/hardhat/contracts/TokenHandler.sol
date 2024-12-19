@@ -106,4 +106,9 @@ contract TokenHandler {
         return kittyBalance;
     }
 
+    // change the owner of this contract
+    function changeOwner(address _newOwner) external onlyOwner {
+        ownerAddress = _newOwner;
+    }
+
 }
